@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Photo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PhotoShare</h1>
+    </header>
+    <main>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="photo">Upload your photo:</label>
+            <input type="file" id="photo" name="photo" required>
+            <label for="visibility">Visibility:</label>
+            <select id="visibility" name="visibility">
+                <option value="public">Public</option>
+                <option value="private">Friends only</option>
+            </select>
+            <button type="submit">Upload</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 PhotoShare</p>
+    </footer>
+</body>
+</html>
